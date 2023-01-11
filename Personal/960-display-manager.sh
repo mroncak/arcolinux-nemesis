@@ -101,23 +101,23 @@ if grep -q "archlinux" /etc/os-release; then
 	REPLACE="Current=arcolinux-simplicity"
 	sudo sed -i "s/$FIND/$REPLACE/g" /etc/sddm.conf
 
-	if [ -f /etc/lightdm/lightdm.conf ]; then
-
-		echo
-		echo "Autologin to lightdm"
-		echo
-		FIND="#autologin-user="
-		REPLACE="autologin-user=$USER"
-    	sudo sed -i "s/$FIND/$REPLACE/g" /etc/lightdm/lightdm.conf
-
-		FIND="#autologin-session="
-		REPLACE="autlogin-session=xfce"
-    	sudo sed -i "s/$FIND/$REPLACE/g" /etc/lightdm/lightdm.conf
-
-    	sudo groupadd autologin
-		sudo usermod -a -G autologin $USER
-
-	fi
+#	if [ -f /etc/lightdm/lightdm.conf ]; then
+#
+#		echo
+#		echo "Autologin to lightdm"
+#		echo
+#		FIND="#autologin-user="
+#		REPLACE="autologin-user=$USER"
+#    	sudo sed -i "s/$FIND/$REPLACE/g" /etc/lightdm/lightdm.conf
+#
+#		FIND="#autologin-session="
+#		REPLACE="autlogin-session=xfce"
+#    	sudo sed -i "s/$FIND/$REPLACE/g" /etc/lightdm/lightdm.conf
+#
+#    	sudo groupadd autologin
+#		sudo usermod -a -G autologin $USER
+#
+#	fi
 
 	if [ -f /etc/lightdm/lightdm-gtk-greeter.conf ]; then
 
