@@ -78,6 +78,9 @@ sudo pacman -S --noconfirm --needed timeshift
 sudo pacman -S --noconfirm --needed timeshift-autosnap
 sudo pacman -S --noconfirm --needed transmission-gtk
 sudo pacman -S --noconfirm --needed ranger
+sudo pacman -S --noconfirm --needed ttf-ubuntumono-nerd
+sudo pacman -S --noconfirm --needed powerline-fonts
+
 
 ######## NEMESIS PROJECT ##########
 
