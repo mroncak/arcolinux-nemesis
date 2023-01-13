@@ -177,23 +177,23 @@ def window_to_next_screen(qtile, switch_group=False, switch_screen=False):
 
 keys.extend([
     # MOVE WINDOW TO NEXT SCREEN
-    Key([mod,"shift"], "Right", lazy.function(window_to_next_screen, switch_screen=False)),
-    Key([mod,"shift"], "Left", lazy.function(window_to_previous_screen, switch_screen=False)),
+    Key([mod,"shift"], "Right", lazy.function(window_to_next_screen, switch_screen=True)),
+    Key([mod,"shift"], "Left", lazy.function(window_to_previous_screen, switch_screen=True)),
 ])
 
 groups = []
 
 # FOR QWERTY KEYBOARDS
-group_names = ["1", "2", "3", "4", "5", "6", "7",]
+#group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
 
 # FOR AZERTY KEYBOARDS
-#group_names = ["ampersand", "eacute", "quotedbl", "apostrophe", "parenleft", "section", "egrave", "exclam", "ccedilla", "agrave",]
+group_names = ["ampersand", "eacute", "quotedbl", "apostrophe", "parenleft", "section", "egrave", "exclam", "ccedilla", "agrave",]
 
 #group_labels = ["1 ", "2 ", "3 ", "4 ", "5 ", "6 ", "7 ", "8 ", "9 ", "0",]
-group_labels = ["   ", "   ", "   " , " 華 ", "   ", "   ", "   ",]
+group_labels = ["", "", "", "", "", "", "", "", "", "",]
 #group_labels = ["Web", "Edit/chat", "Image", "Gimp", "Meld", "Video", "Vb", "Files", "Mail", "Music",]
 
-group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall",]
+group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall",]
 #group_layouts = ["monadtall", "matrix", "monadtall", "bsp", "monadtall", "matrix", "monadtall", "bsp", "monadtall", "monadtall",]
 
 for i in range(len(group_names)):
@@ -235,12 +235,12 @@ layouts = [
     #layout.MonadTall(margin=8, border_width=2, border_focus="#5e81ac", border_normal="#4c566a"),
     layout.MonadTall(**layout_theme),
     #layout.MonadWide(margin=8, border_width=2, border_focus="#5e81ac", border_normal="#4c566a"),
-    #layout.MonadWide(**layout_theme),
-    #layout.Matrix(**layout_theme),
-    #layout.Bsp(**layout_theme),
-    #layout.Floating(**layout_theme),
+    layout.MonadWide(**layout_theme),
+    layout.Matrix(**layout_theme),
+    layout.Bsp(**layout_theme),
+    layout.Floating(**layout_theme),
     layout.RatioTile(**layout_theme),
-    #layout.Max(**layout_theme)
+    layout.Max(**layout_theme)
 ]
 
 # COLORS FOR THE BAR
@@ -560,7 +560,7 @@ bring_front_click = False
 cursor_warp = False
 floating_layout = layout.Floating(float_rules=[
     # Run the utility of `xprop` to see the wm class and name of an X client.
-    *layout.Floating.default_float_rules,
+    *layout.Floating.default_float_rules, 
     Match(wm_class='confirmreset'),  # gitk
     Match(wm_class='makebranch'),  # gitk
     Match(wm_class='maketag'),  # gitk
