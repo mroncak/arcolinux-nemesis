@@ -328,7 +328,8 @@ def init_widgets_list():
                #         padding=-3
                #         ),
                widget.TextBox(
-                        text=" rchLinux"),
+                        #text=" rchLinux"),
+                        text="ArchLinux"),
                         foreground = colors[3],
                         background = colors[12]
                         ),
