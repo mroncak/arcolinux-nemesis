@@ -274,7 +274,7 @@ widget_defaults = init_widgets_defaults()
 def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
-               widget.GroupBox(font="FontAwesome",
+               widget.GroupBox(font="UbuntuMono Nerd Font",
                         fontsize = 19,
                         margin_y = 3,
                         margin_x = 0,
