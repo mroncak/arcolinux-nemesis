@@ -438,20 +438,20 @@ def init_widgets_list():
                #          foreground = colors[2],
                #          background = colors[1]
                #          ),
-               widget.TextBox(
-                        font="FontAwesome",
-                        text="  ",
-                        foreground=colors[3],
-                        background=colors[1],
-                        padding = 0,
-                        fontsize=16
-                        ),
-               widget.Clock(
-                        foreground = colors[5],
-                        background = colors[1],
-                        fontsize = 12,
-                        format="%Y-%m-%d %H:%M"
-                        ),
+               #widget.TextBox(
+               #         font="FontAwesome",
+               #         text="  ",
+               #         foreground=colors[3],
+               #         background=colors[0],
+               #         padding = 0,
+               #         fontsize=16
+               #         ),
+               #widget.Clock(
+               #         foreground = colors[5],
+               #         background = color[0],
+               #         fontsize = 12,
+               #         format="%Y-%m-%d %H:%M"
+               #         ),
                # widget.Sep(
                #          linewidth = 1,
                #          padding = 10,
@@ -459,9 +459,9 @@ def init_widgets_list():
                #          background = colors[1]
                #          ),
                widget.Systray(
-                        background=colors[1],
+                        background=colors[0],
                         icon_size=20,
-                        padding = 4
+                        padding = 5
                         ),
               ]
     return widgets_list
