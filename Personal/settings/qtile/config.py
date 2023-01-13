@@ -246,16 +246,19 @@ layouts = [
 # COLORS FOR THE BAR
 #Theme name : ArcoLinux Default
 def init_colors():
-    return [["#2F343F", "#2F343F"], # color 0
-            ["#2F343F", "#2F343F"], # color 1
-            ["#c0c5ce", "#c0c5ce"], # color 2
-            ["#fba922", "#fba922"], # color 3
-            ["#3384d0", "#3384d0"], # color 4
-            ["#f3f4f5", "#f3f4f5"], # color 5
-            ["#cd1f3f", "#cd1f3f"], # color 6
-            ["#62FF00", "#62FF00"], # color 7
-            ["#6790eb", "#6790eb"], # color 8
-            ["#a9a9a9", "#a9a9a9"]] # color 9
+    return [["#212121", "#212121"], # color 0 - dark
+            ["#ABB2BF", "#ABB2BF"], # color 1 - grey
+            ["#ffffff", "#ffffff"], # color 2 - light
+            ["#212121", "#212121"], # color 3 - text
+            ["#81a1c1", "#81a1c1"], # color 4 - focus
+            ["#f1ffff", "#f1ffff"], # color 5 - active
+            ["#4c566a", "#4c566a"], # color 6 - inactive
+            ["#b48ead", "#b48ead"], # color 7 - urgent
+            ["#bd9bc7", "#bd9bc7"], # color 8 - color0
+            ["#81a1c1", "#81a1c1"]] # color 9 - color1 
+            ["#88c0d0", "#88c0d0"]] # color 10 - color2 
+            ["#a3be8c", "#a3be8c"]] # color 11 - color3 
+            ["#ebcb8b", "#ebcb8b"]] # color 12 - color4 
 
 
 colors = init_colors()
@@ -264,10 +267,10 @@ colors = init_colors()
 # WIDGETS FOR THE BAR
 
 def init_widgets_defaults():
-    return dict(font="Noto Sans",
-                fontsize = 12,
-                padding = 2,
-                background=colors[1])
+    return dict(font="UbuntuMono Nerd Font Bold italic",
+                fontsize = 15,
+                padding = 3,
+                background=colors[0])
 
 widget_defaults = init_widgets_defaults()
 
@@ -282,35 +285,40 @@ def init_widgets_list():
                         padding_x = 5,
                         borderwidth = 1,
                         disable_drag = True,
-                        active = colors[9],
-                        inactive = colors[5],
+                        active = colors[5],
+                        inactive = colors[6],
                         rounded = False,
                         highlight_method = "block",
-                        this_current_screen_border = colors[8],
-                        foreground = colors[2],
-                        background = colors[1]
+                        urgent_alert_method = "block",
+                        urgent_border = colors[7],
+                        this_current_screen_border = colors[4],
+                        this_screen_border = colors[1],
+                        other_current_screen_border = colors[0],
+                        other_screen_border = colors[0],
+                        #foreground = colors[2],
+                        #background = colors[1]
                         ),
                widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[2],
-                        background = colors[1]
+                        linewidth = 0,
+                        padding = 5,
+                        foreground = colors[4],
+                        background = colors[0]
                         ),
-               widget.CurrentLayout(
-                        font = "Noto Sans Bold",
-                        foreground = colors[5],
-                        background = colors[1]
-                        ),
-               widget.Sep(
-                        linewidth = 1,
-                        padding = 10,
-                        foreground = colors[2],
-                        background = colors[1]
-                        ),
-               widget.WindowName(font="Noto Sans",
-                        fontsize = 12,
-                        foreground = colors[5],
-                        background = colors[1],
+               #widget.CurrentLayout(
+               #         font = "Noto Sans Bold",
+               #         foreground = colors[5],
+               #         background = colors[1]
+               #         ),
+               #widget.Sep(
+               #         linewidth = 1,
+               #         padding = 10,
+               #         foreground = colors[2],
+               #         background = colors[1]
+               #         ),
+               widget.WindowName(
+                        fontsize = 14,
+                        foreground = colors[4],
+                        background = colors[0],
                         ),
                # widget.Net(
                #          font="Noto Sans",
