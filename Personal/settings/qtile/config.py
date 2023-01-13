@@ -327,12 +327,11 @@ def init_widgets_list():
                #         fontsize=37,
                #         padding=-3
                #         ),
-               widget.TextBox(
-                        #text=" rchLinux"),
-                        text="ArchLinux"),
-                        foreground = colors[3],
-                        background = colors[12]
-                        ),
+               #widget.TextBox(
+               #        text=" rchLinux"),
+               #         foreground = colors[3],
+               #         background = colors[12]
+               #         ),
                # widget.Net(
                #          font="Noto Sans",
                #          fontsize=12,
