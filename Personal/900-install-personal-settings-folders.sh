@@ -107,13 +107,13 @@ echo
 [ -d $HOME"/.config/variety" ] || mkdir -p $HOME"/.config/variety"
 cp $installed_dir/settings/variety/variety.conf ~/.config/variety/
 sudo cp $installed_dir/settings/variety/variety.conf /etc/skel/.config/variety/
-echo
-echo "Installing screenkey for teaching"
-echo
-cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
-echo
-echo "Adding personal looks to /personal"
-echo
+#echo
+#echo "Installing screenkey for teaching"
+#echo
+#cp $installed_dir/settings/screenkey/screenkey.json ~/.config/
+#echo
+#echo "Adding personal looks to /personal"
+#echo
 sudo cp -arf ../Personal-iso/personal-iso/* /personal
 echo
 echo "Adding personal thunar to .config/thunar"
@@ -135,6 +135,28 @@ echo
 [ -d $HOME"/.config/sublime-text/Packages/User" ] || mkdir -p $HOME"/.config/sublime-text/Packages/User"
 cp  $installed_dir/settings/sublimetext/Preferences.sublime-settings $HOME/.config/sublime-text/Packages/User/Preferences.sublime-settings
 echo
+
+echo
+echo " Terminator settings"
+echo
+[ -d $HOME"/.config/terminator" ] || mkdir -p $HOME"/.config/terminator"
+cp  $installed_dir/settings/terminator/config $HOME/.config/terminator/config
+echo
+
+echo
+echo " Remmina settings"
+echo
+[ -d $HOME"/.config/remmmina" ] || mkdir -p $HOME"/.config/remmina"
+cp  $installed_dir/settings/remmina/remmina.pref $HOME/.config/remmina/remmina.pref
+echo
+
+echo
+echo " OpenfortiVPN connections"
+echo
+[ -d $HOME"/.config/openfortivpn" ] || mkdir -p $HOME"/.config/openfortivpn"
+cp  $installed_dir/settings/openfortivpn/* $HOME/.config/openfortivpn/
+echo
+
 
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
