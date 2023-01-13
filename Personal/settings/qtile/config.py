@@ -366,17 +366,15 @@ def init_widgets_list():
                         fontsize=37,
                         padding=-3
                         ),
-               widget.TextBox(
+               widget.CurrentLayoutIcon(
+                        scale=0.65,
                         foreground = colors[3],
-                        background = colors[10],
-                        #fontsize=fontsize,
-                        text=" ",
-                        padding=3
+                        background = colors[10]
                         ),
-               widget.Clock(
+               widget.CurrentLayout(
                         foreground = colors[3],
                         background = colors[10],
-                        format='%d/%m/%Y - %H:%M '
+                        padding=5
                         ),
                widget.TextBox(
                         foreground = colors[9],
@@ -390,17 +388,37 @@ def init_widgets_list():
                         foreground = colors[3],
                         background = colors[9],
                         #fontsize=fontsize,
+                        text=" ",
+                        padding=3
+                        ),
+               widget.Clock(
+                        foreground = colors[3],
+                        background = colors[9],
+                        format='%d/%m/%Y - %H:%M '
+                        ),
+               widget.TextBox(
+                        foreground = colors[8],
+                        background = colors[9],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
+               widget.TextBox(
+                        foreground = colors[3],
+                        background = colors[8],
+                        #fontsize=fontsize,
                         text=" ",
                         padding=3
                         ),
                widget.KeyboardLayout(
                         foreground = colors[0],
-                        background = colors[9],
+                        background = colors[8],
                         configured_keyboards=['us','sk']
                         ),
                widget.TextBox(
                         foreground = colors[0],
-                        background = colors[9],
+                        background = colors[8],
                         text="",
                         # Icon: nf-oct-triangle_left
                         fontsize=37,
