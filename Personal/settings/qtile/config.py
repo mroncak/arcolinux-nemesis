@@ -374,8 +374,37 @@ def init_widgets_list():
                         padding=3
                         ),
                widget.Clock(
+                        foreground = colors[3],
                         background = colors[10],
                         format='%d/%m/%Y - %H:%M '
+                        ),
+               widget.TextBox(
+                        foreground = colors[9],
+                        background = colors[10],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
+               widget.TextBox(
+                        foreground = colors[3],
+                        background = colors[9],
+                        #fontsize=fontsize,
+                        text=" ",
+                        padding=3
+                        ),
+               widget.KeyboardLayout(
+                        foreground = colors[0],
+                        background = colors[9],
+                        configured_keyboards=['us','sk']
+                        ),
+               widget.TextBox(
+                        foreground = colors[0],
+                        background = colors[9],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
                         ),
                # widget.Net(
                #          font="Noto Sans",
