@@ -332,7 +332,6 @@ def init_widgets_list():
                         foreground = colors[3],
                         background = colors[12]
                         ),
-
                # widget.Net(
                #          font="Noto Sans",
                #          fontsize=12,
