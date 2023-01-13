@@ -347,6 +347,16 @@ def init_widgets_list():
                         fontsize=37,
                         padding=-3
                         ),
+               widget.TextBox(
+                        background = colors[11],
+                        #fontsize=fontsize,
+                        text=" ",
+                        padding=3
+                        ),
+               widget.Net(
+                        background = colors[11],
+                        interface='wlp0s20f3'
+                        ),
                # widget.Net(
                #          font="Noto Sans",
                #          fontsize=12,
