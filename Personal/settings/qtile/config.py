@@ -215,9 +215,9 @@ for i in groups:
         Key(["mod1", "shift"], "Tab", lazy.screen.prev_group()),
 
 # MOVE WINDOW TO SELECTED WORKSPACE 1-10 AND STAY ON WORKSPACE
-        #Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
 # MOVE WINDOW TO SELECTED WORKSPACE 1-10 AND FOLLOW MOVED WINDOW TO WORKSPACE
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name) , lazy.group[i.name].toscreen()),
+        #Key([mod, "shift"], i.name, lazy.window.togroup(i.name) , lazy.group[i.name].toscreen()),
     ])
 
 
@@ -238,8 +238,8 @@ layouts = [
     #layout.MonadWide(**layout_theme),
     #layout.Matrix(**layout_theme),
     #layout.Bsp(**layout_theme),
-    #layout.Floating(**layout_theme),
-    layout.RatioTile(**layout_theme),
+    layout.Floating(**layout_theme),
+    #layout.RatioTile(**layout_theme),
     #layout.Max(**layout_theme)
 ]
 
@@ -275,17 +275,17 @@ def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
                widget.GroupBox(font="FontAwesome",
-                        fontsize = 16,
-                        margin_y = -1,
+                        fontsize = 19,
+                        margin_y = 3,
                         margin_x = 0,
-                        padding_y = 6,
+                        padding_y = 8,
                         padding_x = 5,
-                        borderwidth = 0,
+                        borderwidth = 1,
                         disable_drag = True,
                         active = colors[9],
                         inactive = colors[5],
                         rounded = False,
-                        highlight_method = "text",
+                        highlight_method = "block",
                         this_current_screen_border = colors[8],
                         foreground = colors[2],
                         background = colors[1]
