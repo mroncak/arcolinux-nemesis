@@ -320,13 +320,13 @@ def init_widgets_list():
                         foreground = colors[4],
                         background = colors[0]
                         ),
-               #widget.TextBox(
-               #         foreground = colors[3],
-               #         background = colors[0],
-               #         text="", # Icon: nf-oct-triangle_left
-               #         fontsize=37,
-               #         padding=-3
-               #         ),
+               widget.TextBox(
+                        foreground = colors[3],
+                        background = colors[0],
+                        text="", # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
                #widget.TextBox(
                #         text=" rchLinux"),
                #         foreground = colors[3],
