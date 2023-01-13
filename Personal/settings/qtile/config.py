@@ -61,14 +61,14 @@ keys = [
 
 # SUPER + FUNCTION KEYS
 
-    Key([mod], "f", lazy.window.toggle_fullscreen()),
-    Key([mod], "q", lazy.window.kill()),
+    #Key([mod], "f", lazy.window.toggle_fullscreen()),
+    Key([mod], "w", lazy.window.kill()),
 
 
-# SUPER + SHIFT KEYS
+# SUPER + CONTROL KEYS
 
-    Key([mod, "shift"], "q", lazy.window.kill()),
-    Key([mod, "shift"], "r", lazy.restart()),
+    #Key([mod, "shift"], "q", lazy.window.kill()),
+    Key([mod, "control"], "r", lazy.restart()),
 
 
 # QTILE LAYOUT KEYS
