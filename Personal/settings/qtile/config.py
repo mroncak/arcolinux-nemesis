@@ -255,9 +255,9 @@ def init_colors():
             ["#4c566a", "#4c566a"], # color 6 - inactive
             ["#b48ead", "#b48ead"], # color 7 - urgent
             ["#bd9bc7", "#bd9bc7"], # color 8 - color0
-            ["#81a1c1", "#81a1c1"]] # color 9 - color1 
-            ["#88c0d0", "#88c0d0"]] # color 10 - color2 
-            ["#a3be8c", "#a3be8c"]] # color 11 - color3 
+            ["#81a1c1", "#81a1c1"], # color 9 - color1 
+            ["#88c0d0", "#88c0d0"], # color 10 - color2 
+            ["#a3be8c", "#a3be8c"], # color 11 - color3 
             ["#ebcb8b", "#ebcb8b"]] # color 12 - color4 
 
 
