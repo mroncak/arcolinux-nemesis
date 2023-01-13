@@ -295,8 +295,8 @@ def init_widgets_list():
                         this_screen_border = colors[1],
                         other_current_screen_border = colors[0],
                         other_screen_border = colors[0],
-                        #foreground = colors[2],
-                        #background = colors[1]
+                        foreground = colors[2],
+                        background = colors[0]
                         ),
                widget.Sep(
                         linewidth = 0,
