@@ -318,7 +318,7 @@ def init_widgets_list():
                widget.WindowName(
                         fontsize = 14,
                         foreground = colors[4],
-                        background = colors[0],
+                        background = colors[0]
                         ),
                widget.TextBox(
                         foreground = colors[3],
@@ -330,7 +330,7 @@ def init_widgets_list():
                widget.TextBox(
                         text=" rchLinux"),
                         foreground = colors[3],
-                        background = colors[12],
+                        background = colors[12]
                         ),
 
                # widget.Net(
