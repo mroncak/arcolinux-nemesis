@@ -320,18 +320,33 @@ def init_widgets_list():
                         foreground = colors[4],
                         background = colors[0]
                         ),
-               #widget.TextBox(
-               #         foreground = colors[3],
-               #         background = colors[0],
-               #         text="", # Icon: nf-oct-triangle_left
-               #         fontsize=37,
-               #         padding=-3
-               #         ),
-               #widget.TextBox(
-               #        text=" rchLinux"),
-               #         foreground = colors[3],
-               #         background = colors[12]
-               #         ),
+               widget.Sep(
+                        linewidth = 0,
+                        padding = 5,
+                        foreground = colors[4],
+                        background = colors[0]
+                        ),
+               widget.TextBox(
+                        foreground = colors[12],
+                        background = colors[0],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
+               widget.TextBox(
+                        text=" rchLinux",
+                        foreground = colors[3],
+                        background = colors[12]
+                        ),
+               widget.TextBox(
+                        foreground = colors[11],
+                        background = colors[12],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
                # widget.Net(
                #          font="Noto Sans",
                #          fontsize=12,
