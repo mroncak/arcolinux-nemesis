@@ -157,6 +157,12 @@ echo
 cp  $installed_dir/settings/openfortivpn/* $HOME/.config/openfortivpn/
 echo
 
+echo
+echo " Qtile conf folder"
+echo
+[ -d $HOME"/.config/qtile" ] || mkdir -p $HOME"/.config/qtile"
+cp -r $installed_dir/settings/qtile/* $HOME/.config/qtile/
+echo
 
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
