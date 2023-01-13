@@ -358,6 +358,25 @@ def init_widgets_list():
                         background = colors[11],
                         interface='wlp0s20f3'
                         ),
+               widget.TextBox(
+                        foreground = colors[10],
+                        background = colors[11],
+                        text="",
+                        # Icon: nf-oct-triangle_left
+                        fontsize=37,
+                        padding=-3
+                        ),
+               widget.TextBox(
+                        foreground = colors[3],
+                        background = colors[10],
+                        #fontsize=fontsize,
+                        text=" ",
+                        padding=3
+                        ),
+               widget.Clock(
+                        background = colors[10],
+                        format='%d/%m/%Y - %H:%M '
+                        ),
                # widget.Net(
                #          font="Noto Sans",
                #          fontsize=12,
