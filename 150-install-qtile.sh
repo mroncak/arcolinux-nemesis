@@ -39,7 +39,7 @@ func_install() {
     fi
 }
 
-func_install_qtile() {
+#func_install_qtile() {
 
     echo
     tput setaf 2
@@ -91,5 +91,5 @@ func_install_qtile() {
         tput setaf 3;echo "Installing package nr.  "$count " " $name;tput sgr0;
         func_install $name
     done
-}
+#}
 
