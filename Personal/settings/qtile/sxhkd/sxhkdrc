@@ -84,7 +84,8 @@ super + x
 
 #Rofi theme selector
 super + r
-    rofi-theme-selector
+#    rofi-theme-selector
+     rofi -show drun
 
 #Urxvt
 super + t
@@ -98,9 +99,9 @@ super + v
 super + m
     pragha
 
-#alacritty
+#terminator
 super + Return
-    alacritty
+    terminator
 
 #Xkill
 super + Escape
@@ -136,6 +137,13 @@ super + shift + s
 #super + shift + KP_Enter
 #	thunar
 
+#################################################################
+# SUPER + CONTROL KEYS
+#################################################################
+
+#rofi logout
+super + control + s
+        rofi -show p -modi p:/home/mroncak/.config/rofi/rofi-power-menu/rofi-power-menu
 
 #################################################################
 # CONTROL + ALT KEYS
