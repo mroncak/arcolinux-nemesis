@@ -164,6 +164,15 @@ echo
 cp -r $installed_dir/settings/qtile/* $HOME/.config/qtile/
 echo
 
+echo
+echo " Rofi conf folder"
+echo
+[ -d $HOME"/.config/rofi" ] || mkdir -p $HOME"/.config/rofi"
+cp -r $installed_dir/settings/rofi/* $HOME/.config/rofi/
+echo
+
+
+
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
 
