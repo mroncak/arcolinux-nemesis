@@ -171,6 +171,12 @@ echo
 cp -r $installed_dir/settings/rofi/* $HOME/.config/rofi/
 echo
 
+echo
+echo " LightDM conf folder"
+echo
+[ -d "/etc/lightdm" ] || mkdir -p "/etc/lightdm"
+cp -r $installed_dir/settings/lightdm/* /etc/lightdm/
+echo
 
 
 #uncommenting so that we see the bluetooth icon in our toolbars
