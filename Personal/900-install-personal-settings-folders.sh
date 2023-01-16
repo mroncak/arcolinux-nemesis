@@ -174,8 +174,8 @@ echo
 echo
 echo " LightDM conf folder"
 echo
-[ -d "/etc/lightdm" ] || mkdir -p "/etc/lightdm"
-cp -r $installed_dir/settings/lightdm/* /etc/lightdm/
+[ -d "/etc/lightdm" ] || sudo mkdir -p "/etc/lightdm"
+sudo cp -r $installed_dir/settings/lightdm/* /etc/lightdm/
 echo
 
 
