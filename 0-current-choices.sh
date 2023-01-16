@@ -74,6 +74,7 @@ installed_dir=$(dirname $(readlink -f $(basename `pwd`)))
 cd $installed_dir/Personal
 
 sh 900-*
+sh 905-*
 sh 910-*
 sh 920-*
 sh 930-*
