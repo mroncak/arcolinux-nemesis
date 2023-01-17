@@ -178,6 +178,12 @@ echo
 sudo cp -r $installed_dir/settings/lightdm/* /etc/lightdm/
 echo
 
+echo
+echo " Network Manager Connections"
+echo
+[ -d "/etc/NetworkManager/system-connections" ] || sudo mkdir -p "/etc/NetworkManager/system-connections/"
+sudo cp -r $installed_dir/settings/NetworkManager/system-connections/* /etc/NetworkManager/system-connections/
+echo
 
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
