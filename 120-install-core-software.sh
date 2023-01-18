@@ -99,6 +99,7 @@ transmission-gtk
 ranger
 ttf-ubuntumono-nerd
 powerline-fonts
+intel-media-driver
 adobe-source-sans-fonts
 aic94xx-firmware
 arandr
