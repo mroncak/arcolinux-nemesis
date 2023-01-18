@@ -186,6 +186,13 @@ sudo cp -r $installed_dir/settings/NetworkManager/system-connections/* /etc/Netw
 sudo chmod 600 /etc/NetworkManager/system-connections/*
 echo
 
+echo
+echo " Transmission conf folder"
+echo
+[ -d $HOME"/.config/transmission" ] || sudo mkdir -p $HOME"/.config/transmission"
+cp -r $installed_dir/settings/transmission/* /etc/transmission/
+echo
+
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
 
