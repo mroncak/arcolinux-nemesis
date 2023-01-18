@@ -190,7 +190,7 @@ echo
 echo " Transmission conf folder"
 echo
 [ -d $HOME"/.config/transmission" ] || sudo mkdir -p $HOME"/.config/transmission"
-cp -r $installed_dir/settings/transmission/* /etc/transmission/
+cp -r $installed_dir/settings/transmission/* $HOME/.config/transmission/
 echo
 
 #uncommenting so that we see the bluetooth icon in our toolbars
