@@ -95,6 +95,10 @@ super + r
 super + d
     dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
 
+#LightDM lock
+super + l
+    dm-tool lock
+
 #Teams
 super + t
     /opt/microsoft/msedge/microsoft-edge --use-gl=desktop --enable-features=VaapiVideoDecoder --profile-directory=Default --app-id=ikekejealijnoekkdnogbeobdohbmnfg '--app-url=https://teams.microsoft.com/_#/conversations/General?threadId=19:27d8a1730343494aa84150fc4f6ab157@thread.skype&ctx=channel'
