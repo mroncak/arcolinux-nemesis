@@ -36,13 +36,17 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #wallpaper for other Arch based systems
 #feh --bg-fill /usr/share/archlinux-tweak-tool/data/wallpaper/wallpaper.png &
 #start the conky to learn the shortcuts
-(conky -c $HOME/.config/qtile/scripts/system-overview) &
+#(conky -c $HOME/.config/qtile/scripts/system-overview) &
 
 #start sxhkd to replace Qtile native key-bindings
 run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
 
 #starting utility applications at boot time
+run volumeicon &
+#run pasystray --include-monitors &
+#run blueman-applet &
+#run cbatticon -u 5 &
 run variety &
 run nm-applet &
 run pamac-tray &
@@ -54,7 +58,11 @@ picom --config $HOME/.config/qtile/scripts/picom.conf &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 
 #starting user applications at boot time
-run volumeicon &
+run remmina -i &
+run nextcloud &
+run keepassxc &
+run kdeconnect-indicator &
+#
 #run discord &
 #nitrogen --restore &
 #run caffeine -a &

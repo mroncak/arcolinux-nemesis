@@ -97,9 +97,15 @@ timeshift
 timeshift-autosnap
 transmission-gtk
 ranger
+kdeconnect
+pasystray
 ttf-ubuntumono-nerd
 powerline-fonts
 intel-media-driver
+gnome-calculator
+gnome-firmware
+icedtea-web
+zoom
 adobe-source-sans-fonts
 aic94xx-firmware
 arandr
@@ -235,6 +241,10 @@ sudo systemctl enable avahi-daemon.service
 sudo systemctl enable ntpd.service
 sudo systemctl enable firewalld.service
 sudo systemctl enable libvirtd.service
+
+yay -S --noconfirm --needed ferdium-bin
+yay -S --noconfirm --needed microsoft-edge-stable-bin
+yay -S --noconfirm --needed gnome-network-displays
 
 ###############################################################################################
 
