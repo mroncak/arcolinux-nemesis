@@ -135,6 +135,13 @@ fi
 
 ### ALIASES ###
 
+#personal
+alias p='ping'
+alias ssh3='ssh -p 3000'
+
+#Ansible shortcuts
+alias ans-upg='ansible-playbook ~/Ansible/playbooks/apt.yml --user mroncak --ask-pass --ask-become-pass -i ~/Ansible/inventory/hosts'
+
 #list
 alias ls='ls --color=auto'
 alias la='ls -a'
