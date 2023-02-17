@@ -193,6 +193,15 @@ echo
 cp -r $installed_dir/settings/transmission/* $HOME/.config/transmission/
 echo
 
+echo
+echo " Copy my scripts"
+echo
+sudo cp -r $installed_dir/settings/Script/hosts/hosts.sh /usr/local/bin/h
+sudo cp -r $installed_dir/settings/Script/ssh/sshp /usr/local/bin/sshp
+sudo cp -r $installed_dir/settings/Script/xrandr/xr.sh /usr/local/bin/xr
+echo
+
+
 #uncommenting so that we see the bluetooth icon in our toolbars
 gsettings set org.blueberry use-symbolic-icons false
 
