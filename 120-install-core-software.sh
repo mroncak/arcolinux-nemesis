@@ -176,6 +176,7 @@ paru-bin
 pavucontrol
 playerctl
 polkit-gnome
+gnome-keyring
 python-pylint
 python-pywal
 pv
