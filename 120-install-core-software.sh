@@ -106,6 +106,7 @@ gnome-calculator
 gnome-firmware
 icedtea-web
 zoom
+cbatticon
 adobe-source-sans-fonts
 aic94xx-firmware
 arandr
