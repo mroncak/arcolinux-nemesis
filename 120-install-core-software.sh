@@ -99,7 +99,7 @@ transmission-gtk
 ranger
 kdeconnect
 pasystray
-ttf-ubuntumono-nerd
+ttf-ubuntu-mono-nerd
 powerline-fonts
 intel-media-driver
 gnome-calculator
