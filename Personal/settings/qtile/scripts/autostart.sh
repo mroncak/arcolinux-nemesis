@@ -43,10 +43,10 @@ run sxhkd -c ~/.config/qtile/sxhkd/sxhkdrc &
 
 
 #starting utility applications at boot time
-run volumeicon &
-#run pasystray --include-monitors &
+#run volumeicon &
+run pasystray --include-monitors &
 #run blueman-applet &
-#run cbatticon -u 5 &
+run cbatticon -u 5 &
 run variety &
 run nm-applet &
 run pamac-tray &
