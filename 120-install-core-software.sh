@@ -144,6 +144,7 @@ gparted
 grub-customizer
 gtop
 gvfs-smb
+gvfs-mtp
 hardcode-fixer-git
 hardinfo-gtk3
 hddtemp
