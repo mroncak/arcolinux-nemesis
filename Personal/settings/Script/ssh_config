@@ -1,0 +1,56 @@
+Host SK-WEND-IT-DIST
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host SK-WEND-IT-ACC01-NEw
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host SK-WEND-IT-ACC01
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host SK-WEND-IT-ACC02
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host SK-WEND-IT-ACC03
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host AU-SYD-SHARED-SW01
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host AU-SYD-SHARED-SW02
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host NL-AMS-SHARED-SW01
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host NL-AMS-SHARED-SW02
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host FR-ASG-SHARED-SW01
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host FR-ASG-SHARED-SW02
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host FR-PTH2-SHARED-SW03
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host FR-PTH2-SHARED-SW04
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+Host 172.16.46.208
+    KexAlgorithms +diffie-hellman-group14-sha1
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
