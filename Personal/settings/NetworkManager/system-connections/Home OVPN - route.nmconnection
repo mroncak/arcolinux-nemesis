@@ -21,6 +21,7 @@ service-type=org.freedesktop.NetworkManager.openvpn
 
 [ipv4]
 method=auto
+never-default=true
 route1=192.168.10.0/24
 
 [ipv6]
