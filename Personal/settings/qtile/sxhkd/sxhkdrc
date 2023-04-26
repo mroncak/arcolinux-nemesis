@@ -111,6 +111,10 @@ super + v
 super + m
     /opt/microsoft/msedge/microsoft-edge --use-gl=desktop --enable-features=VaapiVideoDecoder --profile-directory=Default --app-id=faolnafnngnfdaknnbpnkhgohbobgegn --app-url=https://outlook.office.com/mail/ %U
 
+#Remmina Win11 work
+super + n
+    remmina -c .local/share/remmina/group_rdp_win11azure_195-20-172-20.remmina
+
 #terminator
 super + Return
     terminator
@@ -128,6 +132,10 @@ super + Escape
 super + f
     terminator -x 'sudo openfortivpn -c ~/.config/openfortivpn/bra-ssl'
 
+#Wireguard connect work (wg0)
+super + g
+    terminator -x 'wg-quick up wg0'
+
 #Screenshot
 super + p
     flameshot gui
@@ -139,6 +147,10 @@ super + p
 #Openforticlient disconnect all
 super + shift + f
     terminator -x 'sudo killall openfortivpn'
+
+#Wireguard disconnect work (wg0)
+super + shift + g
+    terminator -x 'wg-quick down wg0'
 
 #File-Manager
 #super + shift + Return

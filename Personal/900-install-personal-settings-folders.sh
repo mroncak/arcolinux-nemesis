@@ -148,6 +148,9 @@ echo " Remmina settings"
 echo
 [ -d $HOME"/.config/remmmina" ] || mkdir -p $HOME"/.config/remmina"
 cp  $installed_dir/settings/remmina/remmina.pref $HOME/.config/remmina/remmina.pref
+[ -d $HOME"/.local/share/remmmina" ] || mkdir -p $HOME"/.local/share/remmina"
+cp  $installed_dir/settings/remmina/group* $HOME/.local/share/remmina/
+
 echo
 
 echo
