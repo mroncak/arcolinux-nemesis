@@ -177,6 +177,22 @@ super + shift + g
 super + control + s
         rofi -show p -modi p:/home/mroncak/.config/rofi/rofi-power-menu/rofi-power-menu
 
+#xrandr home
+super + ctrl + h
+    terminator -x 'xr home'
+
+#xrandr work
+super + ctrl + w
+    terminator -x 'xr work'
+
+#xrandr notebook
+super + ctrl + n
+    terminator -x 'xr away'
+
+#nitrogen --restore
+super + ctrl + n
+    terminator -x 'nitrogen --restore'
+
 #################################################################
 # CONTROL + ALT KEYS
 #################################################################
