@@ -23,7 +23,7 @@ pass=`cat ~/.secret | grep Password | cut -d " " -f 2`
 rm ~/.secret
 
 if [ $# -eq 1 ]; then
-	SSHPASS=$pass sshpass -e ssh $username@$hostname
+	SSHPASS=$pass sshpass -e ssh -o StrictHostKeyChecking=no $username@$hostname
 elif [ $# -eq 2 ]; then	
-	SSHPASS=$pass sshpass -e ssh -p $port $username@$hostname
+	SSHPASS=$pass sshpass -e ssh -p $port -o StrictHostKeyChecking=no $username@$hostname
 fi

@@ -161,6 +161,14 @@ cp  $installed_dir/settings/openfortivpn/* $HOME/.config/openfortivpn/
 echo
 
 echo
+echo " Wireguard connections"
+echo
+[ -d "/etc/wireguard" ] || mkdir -p "/etc/wireguard"
+sudo cp $installed_dir/settings/wireguard/* /etc/openfortivpn/wireguard/
+echo
+
+
+echo
 echo " Qtile conf folder"
 echo
 [ -d $HOME"/.config/qtile" ] || mkdir -p $HOME"/.config/qtile"
